@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollviewAttendance34"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="smartracgrohe.CompetitorSalesActivity"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="50dp"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Outlet"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:layout_margin="0dp"
+            android:textColor="@color/colorPrimary"/>
+        <Spinner
+            android:id="@+id/manageStockSubCategoryListSpinnerID"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:prompt="@string/spinner_title4"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/backdropdownfieldblack"
+            android:drawSelectorOnTop="true"
+            />
+
+        <!-- Spinner Element -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Competitor Name"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"/>
+
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="2dp"
+            android:inputType="text"
+            android:lines="1"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:maxLength="500"
+            android:textSize="14sp"
+            android:visibility="visible"
+            android:gravity="start|center_vertical"
+            android:hint="@string/spinner_title2"
+            android:theme="@style/MyEditTextTheme"
+            android:id="@+id/competitorSalesCompetitorListsSpinner"
+            android:background="@drawable/edittextfieldforsalestracking"
+            android:textColor="#696e75"
+            android:textStyle="normal"
+            />
+
+       <!-- <Spinner
+            android:id="@+id/competitorSalesCompetitorListsSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:prompt="@string/spinner_title2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/backdropdownfieldblack"
+            android:drawSelectorOnTop="true"
+            />--> <!--android:background="@drawable/attendanceapprovaldropdownback"-->
+        <!--<View
+            android:id="@+id/customViewcompetitorSalesID"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="0dp"
+            android:background="#d3d5d7"
+            android:alpha="0.8"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Model Name"
+                android:paddingLeft="0dp"
+                android:paddingTop="10dp"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="2dp"
+                android:inputType="text"
+                android:lines="1"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:maxLength="500"
+                android:textSize="14sp"
+                android:visibility="visible"
+                android:gravity="start|center_vertical"
+                android:hint="Enter Model"
+                android:theme="@style/MyEditTextTheme"
+                android:id="@+id/competitorSalesPageModelNameEditTextID"
+                android:background="@drawable/edittextfieldforsalestracking"
+                android:textColor="#696e75"
+                android:textStyle="normal"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="0dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sale Price"
+                android:paddingLeft="0dp"
+                android:paddingTop="10dp"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="2dp"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:maxLength="500"
+                android:textSize="14sp"
+                android:visibility="visible"
+                android:gravity="start|center_vertical"
+                android:hint="Enter Sale Price"
+                android:theme="@style/MyEditTextTheme"
+                android:id="@+id/competitorSalesPageSalePriceEditTextID"
+                android:background="@drawable/edittextfieldforsalestracking"
+                android:textColor="#696e75"
+                android:textStyle="normal"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="0dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Name"
+                android:paddingLeft="0dp"
+                android:paddingTop="10dp"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="2dp"
+                android:inputType="text"
+                android:lines="1"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:maxLength="500"
+                android:textSize="14sp"
+                android:visibility="visible"
+                android:gravity="start|center_vertical"
+                android:hint="Enter Customer Name"
+                android:theme="@style/MyEditTextTheme"
+                android:id="@+id/competitorSalesPageCustomerNameEditTextID"
+                android:background="@drawable/edittextfieldforsalestracking"
+                android:textColor="#696e75"
+                android:textStyle="normal"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="0dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number"
+                android:paddingLeft="0dp"
+                android:paddingTop="10dp"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="2dp"
+                android:inputType="number"
+                android:lines="1"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:maxLength="100"
+                android:textSize="14sp"
+                android:visibility="visible"
+                android:gravity="start|center_vertical"
+                android:hint="Enter Mobile Number"
+                android:theme="@style/MyEditTextTheme"
+                android:id="@+id/competitorSalesPageMobileNumberEditTextID"
+                android:background="@drawable/edittextfieldforsalestracking"
+                android:textColor="#696e75"
+                android:textStyle="normal"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="0dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:paddingLeft="0dp"
+                android:paddingTop="10dp"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="2dp"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:maxLength="500"
+                android:textSize="14sp"
+                android:visibility="visible"
+                android:gravity="start|center_vertical"
+                android:hint="Enter Email"
+                android:theme="@style/MyEditTextTheme"
+                android:id="@+id/competitorSalesPageEmailEditTextID"
+                android:background="@drawable/edittextfieldforsalestracking"
+                android:textColor="#696e75"
+                android:textStyle="normal"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Take A Picture"
+                android:paddingLeft="0dp"
+                android:paddingTop="10dp"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"/>
+            <ImageView
+                android:id="@+id/attendancePagePhotoPreviewAreaImageViewID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_add_a_photo_black_24dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:padding="10dp"
+                />
+
+
+        </LinearLayout>
+
+
+        <!--<ImageView
+            android:id="@+id/competitorSalesPageSubmitImageViewID"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/submitbtn"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="10dp"
+            />-->
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/competitorSalesPageSubmitImageViewID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/submitbtn"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        />
+
+</RelativeLayout>

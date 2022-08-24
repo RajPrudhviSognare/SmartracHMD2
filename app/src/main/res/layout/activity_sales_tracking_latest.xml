@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="smartracgrohe.SalesTrackingActivity_latest">
+
+    <LinearLayout
+        android:id="@+id/SalesTrackingActivity_latestDetailsListLayoutID1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/SalesTrackingActivity_latestDetailsListLayoutID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/SalesTrackingActivity_latestDetailsListLayoutID1"
+        android:layout_above="@+id/botombarSalesTrackingActivity_latestPageSubmitLayoutID"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Outlet"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorPrimary"/>
+        <Spinner
+            android:id="@+id/manageStockSubCategoryListSpinnerID"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:prompt="@string/spinner_title4"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/backdropdownfieldblack"
+            android:drawSelectorOnTop="true"
+            />
+        <ListView
+            android:id="@+id/SalesTrackingActivity_latestDetailsListViewID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="1dp"
+            android:divider="#d3d5d7"
+            android:paddingTop="0dp"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:background="#ffffff"
+            android:cacheColorHint="@android:color/transparent"
+            android:padding="0dp"
+            android:choiceMode="multipleChoice"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="0dp"
+            android:background="#d3d5d7"
+            android:alpha="0.8"
+            />
+
+        <TextView
+            android:id="@+id/SalesTrackingActivity_latestNoDataTextViewID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="No Record Found!"
+            android:textStyle="normal|bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ff0000"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/botombarSalesTrackingActivity_latestPageSubmitLayoutID"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible">
+        <ImageView
+            android:id="@+id/SalesTrackingActivity_latestPageSubmitImageViewID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/submitbtn"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:weightSum="3"
+    android:background="#ffffff"
+    android:padding="2dp">
+
+    <TextView
+        android:id="@+id/customlayout_receive_asset_bymanager_NameValueTextViewID1001"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Mobile"
+        android:textStyle="normal"
+        android:textSize="13sp"
+        android:textColor="#000000"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+
+    <View
+        android:id="@+id/customlayoutcustomViewreceive_asset_bymanagerID1000199991"
+        android:layout_width="1dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="0dp"
+        android:background="#a1a1a1"
+        android:alpha="0.8"
+        android:visibility="gone"
+        />
+
+    <!--<EditText
+        android:id="@+id/customlayout_distribute_asset_ASSIGN_ValueEditTextID"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:paddingLeft="2dp"
+        android:inputType="number"
+        android:lines="1"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:maxLength="40"
+        android:textSize="14sp"
+        android:visibility="visible"
+        android:gravity="start|center_vertical"
+        android:hint="Enter Value"
+        android:background="@drawable/edittextfieldback"
+        android:textColor="#111111"
+        android:textStyle="normal"
+        android:focusableInTouchMode="true"
+        android:layout_weight="1"
+        />-->
+
+    <EditText
+        android:id="@+id/customlayout_receive_asset_bymanager_ASSIGN_ValueEditTextID"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textStyle="normal"
+        android:inputType="number"
+        android:background="@drawable/edittextfieldback"
+        android:text="1000"
+        android:cursorVisible="true"
+        android:lines="1"
+        android:textSize="13sp"
+        android:textColor="#000000"
+        android:gravity="start|center_vertical"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:id="@+id/customViewreceive_asset_bymanagerASSIGNID100019999091"
+        android:layout_width="1dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="0dp"
+        android:background="#a1a1a1"
+        android:alpha="0.8"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/customlayout_receive_asset_bymanager_STOCK_ValueTextViewID1001"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Stock"
+        android:textStyle="normal"
+        android:textSize="13sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+
+</LinearLayout>

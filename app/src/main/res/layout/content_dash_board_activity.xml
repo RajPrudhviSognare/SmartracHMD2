@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DashBoardActivity"
+    tools:showIn="@layout/activity_dash_board">
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:paddingBottom="15dp"
+        android:layout_alignParentTop="true">
+
+        <ImageView android:id="@+id/loginpageCompanyLogoImageViewID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dashboardcompanylogo"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"/>
+
+    </LinearLayout>-->
+
+    <include
+        layout="@layout/dashboardtoplayout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:layout_below="@+id/dashboardpageCompanyLogoLayoutID"
+        android:layout_above="@+id/dashboardbottomLayoutID"
+        android:layout_centerInParent="true"
+
+        android:orientation="vertical">
+
+        <GridView
+            android:id="@+id/dashBoardForAssociatesGridViewID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="0dp"
+            android:verticalSpacing="0dp"
+            android:columnWidth="130dp"
+            android:gravity="center"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:visibility="gone"
+            android:layout_centerInParent="true">
+        </GridView>
+
+        <GridView
+            android:id="@+id/dashBoardForTLGridViewID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="0dp"
+            android:verticalSpacing="0dp"
+            android:columnWidth="130dp"
+            android:gravity="center"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:visibility="gone"
+            android:layout_centerInParent="true">
+        </GridView>
+
+        <GridView
+            android:id="@+id/dashBoardForSMGridViewID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="0dp"
+            android:verticalSpacing="0dp"
+            android:columnWidth="130dp"
+            android:gravity="center"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:visibility="gone"
+            android:layout_centerInParent="true">
+        </GridView>
+
+        <GridView
+            android:id="@+id/dashBoardForSOOGridViewID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="0dp"
+            android:verticalSpacing="0dp"
+            android:columnWidth="130dp"
+            android:gravity="center"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:visibility="gone"
+            android:layout_centerInParent="true">
+        </GridView>
+
+        <GridView
+            android:id="@+id/dashBoardForAssetManagerGridViewID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="0dp"
+            android:verticalSpacing="0dp"
+            android:columnWidth="130dp"
+            android:gravity="center"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:visibility="gone"
+            android:layout_centerInParent="true">
+        </GridView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/dashboardbottomLayoutID"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true">
+
+        <include
+            layout="@layout/dashboardbottomlayout"/>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:paddingTop="2dp"
+    tools:context="smartracgrohe.ReceiveAssetByManagerActivity">
+
+    <LinearLayout
+        android:id="@+id/ReceiveAssetByManagerSelectAssociateLayoutID"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="10dp"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/spinner_title6"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="2dp"
+            android:textColor="@color/colorPrimary"/>
+        <!-- Spinner Element -->
+        <Spinner
+            android:id="@+id/ReceiveAssetByManagerAssociateSpinnerID"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:prompt="@string/spinner_title6"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/backdropdownfieldblack"
+            android:drawSelectorOnTop="true"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/receive_asset_bymanager_list_header_table"/>
+
+    <LinearLayout
+        android:id="@+id/ReceiveAssetByManagerDetailsListLayoutID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/listview_header_receive_asset_bymanager_for_table_LinearLayoutID"
+        android:layout_above="@+id/botombarReceiveAssetByManagerPageSubmitLayoutID"
+        android:visibility="visible">
+        <ListView
+            android:id="@+id/ReceiveAssetByManagerDetailsListViewID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="1dp"
+            android:divider="#d3d5d7"
+            android:paddingTop="0dp"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:background="#ffffff"
+            android:cacheColorHint="@android:color/transparent"
+            android:padding="0dp"
+            android:choiceMode="multipleChoice"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="0dp"
+            android:background="#d3d5d7"
+            android:alpha="0.8"
+            />
+    </LinearLayout>
+
+    <!--<include layout="@layout/bottombar_target_setting"/>-->
+
+    <LinearLayout
+        android:id="@+id/botombarReceiveAssetByManagerPageSubmitLayoutID"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:id="@+id/ReceiveAssetByManagerPageSubmitImageViewID"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/submitbtn"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Ddrive/AndroidStudioProjects/SmartracGrohe/app/src/main/res/layout/activity_associates_report_tabbed.xml" value="0.1" />
+        <entry key="..\:/Ddrive/AndroidStudioProjects/SmartracGrohe/app/src/main/res/layout/activity_attendance_approval_revised1.xml" value="0.1" />
+        <entry key="..\:/Ddrive/AndroidStudioProjects/SmartracGrohe/app/src/main/res/layout/activity_dashboard_attendance_count.xml" value="0.16666666666666666" />
+        <entry key="..\:/Ddrive/AndroidStudioProjects/SmartracGrohe/app/src/main/res/layout/associatereportsattendancefragment.xml" value="0.1" />
+        <entry key="..\:/Ddrive/AndroidStudioProjects/SmartracGrohe/app/src/main/res/layout/associatereportsattendancefragment_old.xml" value="0.16893115942028986" />
+        <entry key="..\:/Ddrive/AndroidStudioProjects/SmartracGrohe/app/src/main/res/layout/attendance_approval_intime_fragment.xml" value="0.1" />
+        <entry key="..\:/Ddrive/AndroidStudioProjects/SmartracGrohe/app/src/main/res/layout/custom_layout_for_associatereports_attendancepage.xml" value="0.1796875" />
+        <entry key="..\:/Ddrive/AndroidStudioProjects/SmartracGrohe/app/src/main/res/layout/customlayout_associatereport_attendance_monthlydetails.xml" value="0.1796875" />
+        <entry key="..\:/Ddrive/AndroidStudioProjects/SmartracGrohe/app/src/main/res/layout/customlayout_associatereport_attendance_monthlydetails_old.xml" value="0.1796875" />
+        <entry key="..\:/Ddrive/AndroidStudioProjects/SmartracGrohe/app/src/main/res/layout/dashboard_topbar_title.xml" value="0.1" />
+        <entry key="..\:/Ddrive/AndroidStudioProjects/SmartracGrohe/app/src/main/res/layout/hrms_payslip_fragment.xml" value="0.1796875" />
+        <entry key="..\:/Ddrive/AndroidStudioProjects/SmartracGrohe/app/src/main/res/layout/listview_header_associate_monthly_attendance_table.xml" value="0.1796875" />
+        <entry key="..\:/Users/prudh/Desktop/SmartracHMD/app/src/main/res/layout/activity_dash_board.xml" value="0.18432971014492755" />
+        <entry key="..\:/Users/prudh/Desktop/SmartracHMD/app/src/main/res/layout/content_dash_board_activity.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/prudh/Desktop/SmartracHMD/app/src/main/res/layout/dashboard_topbar_title.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/prudh/Desktop/SmartracHMD/app/src/main/res/layout/dashboardbottomlayout.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/prudh/Desktop/SmartracHMD/app/src/main/res/layout/dashboardtoplayout.xml" value="0.22826086956521738" />
+      </map>
+    </option>
+  </component>
+  <component name="Kotlin2JsCompilerArguments">
+    <option name="sourceMapEmbedSources" />
+    <option name="sourceMapPrefix" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

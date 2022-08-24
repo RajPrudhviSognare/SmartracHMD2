@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:padding="2dp"
+    android:background="#ffffff">
+
+    <CheckBox
+        android:id="@+id/customlayout_receiveAssets_ByAssociate_checkBoxID"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:checked="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/customlayout_receiveAssets_ByAssociate_checkBoxID">
+
+        <TextView
+            android:id="@+id/customlayout_receiveAssets_ByAssociate_DateTextViewID"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textStyle="normal|bold"
+            android:textSize="13sp"
+            android:textColor="#464646"
+            android:gravity="left"
+            android:paddingLeft="5dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+
+        <View
+            android:id="@+id/customViewInOutTimeID1000199991"
+            android:layout_width="1dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="0dp"
+            android:background="#a1a1a1"
+            android:alpha="0.8"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:paddingTop="2dp"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/customlayout_receiveAssets_ByAssociate_NameTextViewID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textStyle="normal|bold"
+                android:textSize="13sp"
+                android:textColor="#464646"
+                android:gravity="center"
+                android:paddingLeft="0dp"
+                android:paddingBottom="5dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                />
+            <ImageView
+                android:id="@+id/customlayout_receiveAssets_ByAssociate_ImageViewID"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:src="@drawable/photo_preview_area"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/customViewInOutTimeID100019999091"
+            android:layout_width="1dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="0dp"
+            android:background="#a1a1a1"
+            android:alpha="0.8"
+            android:visibility="gone"
+            />
+
+        <EditText
+            android:id="@+id/customlayout_receiveAssets_ByAssociate_ASSIGN_ValueEditTextID"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textStyle="normal"
+            android:inputType="number"
+            android:background="@drawable/edittextfieldback"
+            android:text="1000"
+            android:cursorVisible="true"
+            android:lines="1"
+            android:textSize="13sp"
+            android:textColor="#464646"
+            android:gravity="start|center_vertical"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"/>
+
+        <View
+            android:id="@+id/customViewInOutTimeID1000199990912"
+            android:layout_width="1dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="0dp"
+            android:background="#a1a1a1"
+            android:alpha="0.8"
+            android:visibility="gone"
+            />
+
+        <EditText
+            android:id="@+id/customlayout_receiveAssets_ByAssociate_Comments_ValueEditTextID"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textStyle="normal"
+            android:inputType="text"
+            android:background="@drawable/edittextfieldback"
+            android:text="Comments"
+            android:cursorVisible="true"
+            android:lines="1"
+            android:textSize="13sp"
+            android:textColor="#464646"
+            android:gravity="start|center_vertical"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

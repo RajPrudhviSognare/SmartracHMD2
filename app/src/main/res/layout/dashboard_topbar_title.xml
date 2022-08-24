@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="35dp"
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal"><!--android:background="@drawable/topbardashboardback"-->
+
+    <ImageView
+        android:id="@+id/dashboardtopbarLogouticonImageViewID"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/logout_icon" />
+
+    <TextView
+        android:id="@+id/mytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Smartrac - HMD2"
+        android:textColor="@color/whitecolor"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/dashboardtopbarusericonImageViewID"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/topbardashboardusericon"
+        android:onClick="popup" />
+
+    <ImageView
+        android:id="@+id/dashboardtopbarLocationImageViewID"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toLeftOf="@+id/dashboardtopbarusericonImageViewID"
+        android:background="@drawable/mapicon"
+        android:visibility="visible" /> <!-- android:background="@android:drawable/ic_dialog_map" -->
+    <ImageView
+        android:id="@+id/dashboardtopbarsosImageViewID"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toLeftOf="@+id/dashboardtopbarLocationImageViewID"
+        android:background="@drawable/ic_settings_black_24dp"
+        android:visibility="visible" />
+</RelativeLayout>

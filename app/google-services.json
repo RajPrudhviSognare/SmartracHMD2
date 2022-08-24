@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1046883310894",
+    "firebase_url": "https://smartracgrohe.firebaseio.com",
+    "project_id": "com.experis.smartracgrohe",
+    "storage_bucket": "smartracgrohe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1046883310894:android:7747279c5698cf919deebf",
+        "android_client_info": {
+          "package_name": "com.experis.smartrac_HMD2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1046883310894-h9bu9tqt77psgvr4m0qe1rnpf9ro5itt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.experis.smartrac_HMD2",
+            "certificate_hash": "601a96594a3342998ff3c1f37966978b249b881c"
+          }
+        },
+        {
+          "client_id": "1046883310894-ipb4gooolvnurcg6499mvqni2ikt3332.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjlEn_6Fr2xUiQNpRfSal_CT0oHvDD3fY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1046883310894-ipb4gooolvnurcg6499mvqni2ikt3332.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

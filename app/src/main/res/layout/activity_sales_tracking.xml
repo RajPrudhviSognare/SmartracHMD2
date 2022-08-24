@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollviewAttendance3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="smartracgrohe.SalesTrackingActivity"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="50dp"
+        >
+
+        <!--IMEI Details-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+
+            <!-- Sub Category Spinner Element -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Outlet"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"/>
+            <Spinner
+                android:id="@+id/manageStockSubCategoryListSpinnerID"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:prompt="@string/spinner_title4"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/backdropdownfieldblack"
+                android:drawSelectorOnTop="true"
+                />
+            <!--<View
+                android:id="@+id/customViewcompetitorSalesID"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="0dp"
+                android:background="#d3d5d7"
+                android:alpha="0.8"/>-->
+            <!-- Sub Category Spinner Element -->
+
+            <!-- Product Spinner Element -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Name"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"/>
+            <Spinner
+                android:id="@+id/manageStockProductNameListSpinnerID"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:prompt="@string/spinner_title5"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/backdropdownfieldblack"
+                android:drawSelectorOnTop="true"
+                />
+
+           <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IMEI Number"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="2dp"
+                android:inputType="text"
+                android:lines="1"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:maxLength="170"
+                android:textSize="14sp"
+                android:visibility="visible"
+                android:gravity="start|center_vertical"
+                android:hint="Enter IMEI Number"
+                android:theme="@style/MyEditTextTheme"
+                android:id="@+id/salesTrackingPageIMEIEditTextID"
+                android:background="@drawable/edittextfieldforsalestracking"
+                android:textColor="#696e75"
+                android:textStyle="normal"
+                />--><!--android:text="s10008"-->
+
+            <Button
+                android:id="@+id/salesTrackingPagecheckIMEIEBtnID"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text="Check"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/whitecolor"
+                android:background="@drawable/roundcorner_button"/>
+        </LinearLayout>
+        <!--IMEI Details-->
+
+        <!--Product Details-->
+        <LinearLayout
+            android:id="@+id/salesTrackingPageProductDetailsLayoutID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/salesTrackingPageProductNameTextViewID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Product Name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <View
+                android:id="@+id/viewID1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:alpha="0.8"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Category"
+                    android:textColor="#696e75"
+                    android:textSize="14sp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/salesTrackingPageProductCategoryTextViewID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="40dp"
+                    android:text=""
+                    android:textColor="#696e75"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewID2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:alpha="0.8"
+                android:background="#d3d5d7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Sub Category"
+                    android:textColor="#696e75"
+                    android:textSize="14sp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/salesTrackingPageProductSubCategoryTextViewID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="40dp"
+                    android:text=""
+                    android:textColor="#696e75"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewID3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:alpha="0.8"
+                android:background="#d3d5d7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Price"
+                    android:textColor="#696e75"
+                    android:textSize="14sp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/salesTrackingPageProductColorTextViewID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="40dp"
+                    android:text=""
+                    android:textColor="#696e75"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewID4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:alpha="0.8"
+                android:background="#d3d5d7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="SKU"
+                    android:textColor="#696e75"
+                    android:textSize="14sp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/salesTrackingPageProductSKUTextViewID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="40dp"
+                    android:text=""
+                    android:textColor="#696e75"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewID5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:alpha="0.8"
+                android:background="#d3d5d7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Description"
+                    android:textColor="#696e75"
+                    android:textSize="14sp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/salesTrackingPageProductDESCTextViewID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="40dp"
+                    android:text=""
+                    android:textColor="#696e75"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewID56"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:alpha="0.8"
+                android:background="#d3d5d7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Weight"
+                    android:textColor="#696e75"
+                    android:textSize="14sp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/salesTrackingPageProductWEIGHTTextViewID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="40dp"
+                    android:text=""
+                    android:textColor="#696e75"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewID45"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:alpha="0.8"
+                android:background="#d3d5d7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Available Unit"
+                    android:textColor="#696e75"
+                    android:textSize="14sp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/salesTrackingPageProductUNITTextViewID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="40dp"
+                    android:text=""
+                    android:textColor="#696e75"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewID59"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:alpha="0.8"
+                android:background="#d3d5d7" />
+        </LinearLayout>
+        <!--Product Details-->
+
+
+        <!--Sales Info Details-->
+        <LinearLayout
+            android:id="@+id/salesTrackingPageSaleInfoDetailsLayoutID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/salesTrackingPageSalesInfoTextViewID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Sale Information"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <View
+                android:id="@+id/viewID11"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:alpha="0.8"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:text="Sale Quantity"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/salesTrackingPageSaleQuantityEditTextID"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/edittextfieldforsalestracking"
+                    android:gravity="start|center_vertical"
+                    android:hint="Enter Quantity"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="500"
+                    android:paddingLeft="2dp"
+                    android:textColor="#696e75"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    android:theme="@style/MyEditTextTheme"
+                    android:visibility="visible" /><!--android:text="s10008"-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:text="Sale Price"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/salesTrackingPageSalePriceEditTextID"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/edittextfieldforsalestracking"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="start|center_vertical"
+                    android:hint="Price"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="500"
+                    android:paddingLeft="2dp"
+                    android:textColor="#696e75"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    android:theme="@style/MyEditTextTheme"
+                    android:visibility="visible" /><!--android:text="s10008"-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:text="Customer Name"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/salesTrackingPageCustomerNameEditTextID"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/edittextfieldforsalestracking"
+                    android:gravity="start|center_vertical"
+                    android:hint="Enter Customer Name"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLength="500"
+                    android:paddingLeft="2dp"
+                    android:textColor="#696e75"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    android:theme="@style/MyEditTextTheme"
+                    android:visibility="visible" /><!--android:text="s10008"-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:text="Phone Number"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/salesTrackingPagePhoneNumberEditTextID"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/edittextfieldforsalestracking"
+                    android:gravity="start|center_vertical"
+                    android:hint="Enter Phone Number"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="50"
+                    android:paddingLeft="2dp"
+                    android:textColor="#696e75"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    android:theme="@style/MyEditTextTheme"
+                    android:visibility="visible" /><!--android:text="s10008"-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:text="Email"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/salesTrackingPageEmailEditTextID"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/edittextfieldforsalestracking"
+                    android:gravity="start|center_vertical"
+                    android:hint="Enter Email Address"
+                    android:inputType="textEmailAddress"
+                    android:lines="1"
+                    android:maxLength="500"
+                    android:paddingLeft="2dp"
+                    android:textColor="#696e75"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    android:theme="@style/MyEditTextTheme"
+                    android:visibility="visible" /><!--android:text="s10008"-->
+                <!--<ImageView
+                    android:id="@+id/salesTrackingPageSubmitImageViewID"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/submitbtn"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="10dp"
+                    />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:text="Take A Picture"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:id="@+id/attendancePagePhotoPreviewAreaImageViewID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_add_a_photo_black_24dp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--Sales Info Details-->
+
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/salesTrackingPageSubmitImageViewID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/submitbtn"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        />
+
+</RelativeLayout>

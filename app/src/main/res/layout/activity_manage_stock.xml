@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollviewAttendance35"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="smartracgrohe.ManageStocksActivity"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="50dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+
+            <!-- Category Spinner Element -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"/>
+            <Spinner
+                android:id="@+id/manageStockCategoryListSpinnerID"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:prompt="@string/spinner_title3"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/backdropdownfieldblack"
+                android:drawSelectorOnTop="true"
+                />
+            <!--<View
+                android:id="@+id/customViewcompetitorSalesID"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="0dp"
+                android:background="#d3d5d7"
+                android:alpha="0.8"/>-->
+            <!-- Category Spinner Element -->
+
+            <!-- Sub Category Spinner Element -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sub-Category"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorPrimary"/>
+                <Spinner
+                    android:id="@+id/manageStockSubCategoryListSpinnerID"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:prompt="@string/spinner_title4"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/backdropdownfieldblack"
+                    android:drawSelectorOnTop="true"
+                    />
+                <!--<View
+                    android:id="@+id/customViewcompetitorSalesID"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#d3d5d7"
+                    android:alpha="0.8"/>-->
+                <!-- Sub Category Spinner Element -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Outlet"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"/>
+            <Spinner
+                android:id="@+id/manageStockSubCategoryListSpinnerIDold"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:prompt="@string/spinner_title4"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/backdropdownfieldblack"
+                android:drawSelectorOnTop="true"
+                />
+
+            <!-- Product Spinner Element -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Name"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"/>
+            <Spinner
+                android:id="@+id/manageStockProductNameListSpinnerID"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:prompt="@string/spinner_title5"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/backdropdownfieldblack"
+                android:drawSelectorOnTop="true"
+                />
+            <!--<View
+                android:id="@+id/customViewcompetitorSalesID"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="0dp"
+                android:background="#d3d5d7"
+                android:alpha="0.8"/>-->
+            <!-- Product Spinner Element -->
+
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SKU Code"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="10dp"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"/>
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="2dp"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:maxLength="500"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    android:gravity="start|center_vertical"
+                    android:hint="SKU Code"
+                    android:clickable="false"
+                    android:focusableInTouchMode="false"
+                    android:theme="@style/MyEditTextTheme"
+                    android:id="@+id/manageStockPageSKUCodeEditTextID"
+                    android:background="@drawable/edittextfieldforsalestracking"
+                    android:textColor="#949ca6"
+                    android:textStyle="normal"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stock Count"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="10dp"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"/>
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="2dp"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:maxLength="170"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    android:gravity="start|center_vertical"
+                    android:hint="Enter stock count"
+                    android:theme="@style/MyEditTextTheme"
+                    android:id="@+id/manageStockPageIMEINumber1EditTextID"
+                    android:background="@drawable/edittextfieldforsalestracking"
+                    android:textColor="#696e75"
+                    android:textStyle="normal"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Take A Picture"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="10dp"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"/>
+                <ImageView
+                    android:id="@+id/attendancePagePhotoPreviewAreaImageViewID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_add_a_photo_black_24dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="10dp"
+                    />
+
+
+            </LinearLayout>
+
+
+          <!--  <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IMEI Number 1"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="10dp"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"/>
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="2dp"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:maxLength="170"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    android:gravity="start|center_vertical"
+                    android:hint="Enter IMEI Number 1"
+                    android:theme="@style/MyEditTextTheme"
+                    android:id="@+id/manageStockPageIMEINumber1EditTextID"
+                    android:background="@drawable/edittextfieldforsalestracking"
+                    android:textColor="#696e75"
+                    android:textStyle="normal"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IMEI Number 2"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="10dp"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"/>
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="2dp"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:maxLength="170"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    android:gravity="start|center_vertical"
+                    android:hint="Enter IMEI Number 2"
+                    android:theme="@style/MyEditTextTheme"
+                    android:id="@+id/manageStockPageIMEINumber2EditTextID"
+                    android:background="@drawable/edittextfieldforsalestracking"
+                    android:textColor="#696e75"
+                    android:textStyle="normal"
+                    />
+            </LinearLayout>-->
+
+            <!--<ImageView
+                android:id="@+id/manageStockPageSubmitImageViewID"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/submitbtn"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="10dp"
+                />-->
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/manageStockPageSubmitImageViewID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/submitbtn"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        />
+
+</RelativeLayout>

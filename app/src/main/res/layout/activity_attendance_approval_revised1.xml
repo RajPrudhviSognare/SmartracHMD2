@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <!--<Button
+            android:id="@+id/attendanceApprovalIntimeBtnID"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingBottom="15dp"
+            android:text="In Time Attendance"
+            android:textColor="@color/colorPrimary" />
+        <Button
+            android:id="@+id/attendanceApprovalOuttimeBtnID"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingBottom="15dp"
+            android:text="Out Time Attendance"
+            android:textColor="@color/colorPrimary"/>
+        <Button
+            android:id="@+id/attendanceApprovalWeeklyoffBtnID"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingBottom="15dp"
+            android:text="Weekly Off Attendance"
+            android:textColor="@color/colorPrimary"/>
+        <Button
+            android:id="@+id/attendanceApprovalLeaveBtnID"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingBottom="15dp"
+            android:text="Leave Attendance"
+            android:textColor="@color/colorPrimary"/>
+        <Button
+            android:id="@+id/attendanceApprovalMeetingBtnID"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingBottom="15dp"
+            android:text="Meeting Attendance"
+            android:textColor="@color/colorPrimary"/>-->
+
+        <Button
+            android:id="@+id/attendanceApprovalIntimeBtnID"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:text="In \u0026 out Time"
+            android:textColor="#ffffff"
+            android:background="@color/colorPrimary" />
+        <Button
+            android:id="@+id/attendanceApprovalOuttimeBtnID"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:text="Out Time Attendance"
+            android:textColor="#ffffff"
+            android:visibility="gone"
+            android:background="@color/colorPrimary"/>
+        <Button
+            android:id="@+id/attendanceApprovalWeeklyoffBtnID"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:text="Weekly Off"
+            android:textColor="#ffffff"
+            android:background="@color/colorPrimary"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/attendanceApprovalLeaveBtnID"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:text="Leave"
+            android:textColor="#ffffff"
+            android:background="@color/colorPrimary"/>
+        <Button
+            android:id="@+id/attendanceApprovalMeetingBtnID"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:text="On Duty"
+            android:textColor="#ffffff"
+            android:background="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
