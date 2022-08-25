@@ -208,6 +208,7 @@ public class DashBoardActivity extends AppCompatActivity {
 
     private int dashIconsForAssociates[] = {
             R.drawable.sales,
+            R.drawable.dashboardicon,
 //            R.drawable.attendanceicon,
 //            R.drawable.hrmsicon,
 //            R.drawable.messagesicon,
@@ -356,7 +357,14 @@ public class DashBoardActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int pos, long id) {
                 if (pos == 0) {
-
+                    Intent i = new Intent(DashBoardActivity.this, SalesReport.class);
+                    startActivity(i);
+                    overridePendingTransition(R.anim.pull_in_left, R.anim.push_out_right);
+                }
+                if (pos == 1) {
+                    Intent i = new Intent(DashBoardActivity.this, MainActivity.class);
+                    startActivity(i);
+                    overridePendingTransition(R.anim.pull_in_left, R.anim.push_out_right);
                 }
 //                //Attendance
 //                if (pos == 0) {

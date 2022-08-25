@@ -8,6 +8,7 @@ public class Constants {
 
     public static boolean GEOFENCE_ENABLED = false;
     public static String ASSOCIATE_ID = "";
+    public static String ASSOCIATE_CODE = "";
     public static String TL_ID = "";
     public static String OUTLET_ID = "";
     public static String ATTENDANCE_TYPE = "";
@@ -101,6 +102,10 @@ public class Constants {
     public static String ASSOCIATE_LIST_TL_RELATIVE_URI = "/report/associateList_tl";
     public static String ASSOCIATE_TL_REPORT_ATTENDANCE_DATE_RELATIVE_URI = "/report/getDetailsmonthlyReport_tl";
     public static String GET_POLICY_DOCUMENTS_URI = "/documents/get";
+
+
+    public static String SAVE_INPUT = "tracking/save_input";
+    public static String SALES_REPORT = "sales/record_sale";
 
 
     public static String CLIENT_ID = "5783";
