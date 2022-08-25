@@ -114,8 +114,8 @@ public class SalesReport extends AppCompatActivity {
         client.AddParam("latitude", Constants.UNIV_LAT);
         Log.e("latitude", Constants.UNIV_LAT);
 
-        client.AddParam("longitude", Constants.UNIV_LAT);
-        Log.e("longitude", Constants.UNIV_LAT);
+        client.AddParam("longitude", Constants.UNIV_LONG);
+        Log.e("longitude", Constants.UNIV_LONG);
 
 
         new Thread(new Runnable() {
